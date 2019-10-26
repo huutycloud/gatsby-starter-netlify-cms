@@ -20,3 +20,7 @@ AWS Free Tier provides 720 hours run t2.micro to run Windows or Linux operation 
 AMI: Amazon Machine Images (AMI) is a snapshot of operation system. We use AMI to create an instance. One AMI can have many instances.
 
 EBS: Amazon Elastic Block Store is a volume to store data and OS. Look like an SSD or HDD in your laptop.
+
+## Launch an EC2 Instance
+
+<https://aws.amazon.com/premiumsupport/knowledge-center/launch-instance-custom-ami/>
