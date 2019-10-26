@@ -52,3 +52,19 @@ Elastic IP address:
 * Static Public IP address
 * You are charged if not used
 * Associated with a private IP address on the instance
+
+## NAT Instance vs NAT Gateway
+
+NAT Instance:
+
+* Managed by you
+* Can you as a bastion host
+* Scale up (instance type) manually and use enhanced networking
+* Neet to assign Security Group
+
+NAT Gateway
+
+* Managed by AWS
+* Cannot access through SSH
+* Elastic scalability up to 45Gbps
+* No Security Group
