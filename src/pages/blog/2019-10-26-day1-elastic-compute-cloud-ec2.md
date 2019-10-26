@@ -24,3 +24,11 @@ EBS: Amazon Elastic Block Store is a volume to store data and OS. Look like an S
 ## Launch an EC2 Instance
 
 <https://aws.amazon.com/premiumsupport/knowledge-center/launch-instance-custom-ami/>
+
+## Security Group
+
+Security Group is a firewall in instance level.
+
+Inbound: Traffic rule from outside to instance. (Default not allow all)
+
+Outbound: Traffic rule from instance to outside. (Default allow all)
