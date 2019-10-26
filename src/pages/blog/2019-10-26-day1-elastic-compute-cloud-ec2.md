@@ -60,7 +60,9 @@ NAT Instance:
 * Managed by you
 * Can you as a bastion host
 * Scale up (instance type) manually and use enhanced networking
-* Neet to assign Security Group
+* Need to assign Security Group
+* No high availability
+* Can impliment port forwarding through manual customisation
 
 NAT Gateway
 
@@ -68,3 +70,5 @@ NAT Gateway
 * Cannot access through SSH
 * Elastic scalability up to 45Gbps
 * No Security Group
+* Provides automatic high availability within an AZ and can be placed in multiple AZs
+* Does not support port forwarding
