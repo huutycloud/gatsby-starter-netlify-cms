@@ -5,11 +5,11 @@ date: 2019-10-26T02:37:30.200Z
 description: >-
   Welcome to my first blog post. My name is Nguyen Huu Ty. In this series, I
   will summary everything I know about Amazon Web Services (AWS).
-featuredpost: false
+featuredpost: true
 featuredimage: /img/chemex.jpg
 tags:
   - aws
 ---
-Trong series này mình chủ yếu sẽ tìm hiểu về các dịch vụ của AWS. Dự kiến mỗi ngày một bài viết tìm hiểu về một dịch vụ điện toán của AWS. Mình sẽ viết bằng Tiếng Việt để các bạn dễ hiểu. Hi vọng các bạn sẽ theo dõi thường xuyên bài viết của mình.
+In this series, I will mainly learn about AWS services. An article is expected to be written daily about an AWS computing service. I will write in English for improve my writing skill. Hope you will follow your posts regularly.
 
-Kiến thức được mình thu thập từ các khóa học trên Udemy và các bài viết để tổng hợp thành một bài viết hoàn thiện nhất cho những người mới bắt đầu học AWS như mình. Mục tiêu sẽ là giúp các bạn hiểu được concept của Cloud Computing và các mẹo nhỏ để thi chứng chỉ AWS Certified Solutions Architect Associate.
+The knowledge I gathered from the Udemy courses and articles to synthesize into a perfect article for those who just started AWS like me. The goal will be to help you understand the concept of Cloud Computing and the tips for taking the AWS Certified Solutions Architect Associate certification.
