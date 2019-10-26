@@ -14,3 +14,9 @@ tags:
 Elastic Compute Cloud (EC2) is a service help a user create a virtual machine in cloud. Some people call that by VPS.
 
 AWS Free Tier provides 720 hours run t2.micro to run Windows or Linux operation system instance.
+
+## Terms
+
+AMI: Amazon Machine Images (AMI) is a snapshot of operation system. We use AMI to create an instance. One AMI can have many instances.
+
+EBS: Amazon Elastic Block Store is a volume to store data and OS. Look like an SSD or HDD in your laptop.
