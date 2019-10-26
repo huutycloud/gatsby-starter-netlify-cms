@@ -47,7 +47,7 @@ Private IP address:
 * Retained when the instance is stopped
 * Used in Public and Private Subnets
 
-Elastic IP address
+Elastic IP address:
 
 * Static Public IP address
 * You are charged if not used
