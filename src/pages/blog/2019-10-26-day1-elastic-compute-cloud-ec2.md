@@ -11,13 +11,13 @@ tags:
 ---
 ## Overview
 
-Elastic Compute Cloud (EC2) is a service help a user create a virtual machine in cloud. Some people call that by VPS.
+Elastic Compute Cloud (EC2) is a service help a user create a virtual machine in Cloud. Some people call that by VPS.
 
 AWS Free Tier provides 720 hours run t2.micro to run Windows or Linux operation system instance.
 
 ## Terms
 
-AMI: Amazon Machine Images (AMI) is a snapshot of operation system. We use AMI to create an instance. One AMI can have many instances.
+AMI: Amazon Machine Images (AMI) is a snapshot of the operating system. We use AMI to create an instance. One AMI can have many instances.
 
 EBS: Amazon Elastic Block Store is a volume to store data and OS. Look like an SSD or HDD in your laptop.
 
@@ -27,7 +27,7 @@ EBS: Amazon Elastic Block Store is a volume to store data and OS. Look like an S
 
 ## Security Group
 
-Security Group is a firewall in instance level.
+Security Group is a firewall at the instance level.
 
 Inbound: Traffic rule from outside to instance. (Default not allow all)
 
@@ -46,9 +46,7 @@ Private IP address:
 
 * Retained when the instance is stopped
 * Used in Public and Private Subnets
-
-Elastic IP address:
-
+* Elastic IP address:
 * Static Public IP address
 * You are charged if not used
 * Associated with a private IP address on the instance
@@ -59,12 +57,12 @@ NAT Instance:
 
 * Managed by you
 * Can you as a bastion host
-* Scale up (instance type) manually and use enhanced networking
+* Scale-up (instance type) manually and use enhanced networking
 * Need to assign Security Group
 * No high availability
-* Can impliment port forwarding through manual customisation
+* Can implement port forwarding through manual customization
 
-NAT Gateway
+NAT Gateway:
 
 * Managed by AWS
 * Cannot access through SSH
