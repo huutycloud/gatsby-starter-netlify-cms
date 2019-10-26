@@ -32,3 +32,23 @@ Security Group is a firewall in instance level.
 Inbound: Traffic rule from outside to instance. (Default not allow all)
 
 Outbound: Traffic rule from instance to outside. (Default allow all)
+
+## Public, Private, and Elastic IP addresses
+
+Public IP address:
+
+* Lost when the instance is stopped
+* Used in Public Subnets
+* No charge
+* Associated with a private IP address on the instance
+
+Private IP address:
+
+* Retained when the instance is stopped
+* Used in Public and Private Subnets
+
+Elastic IP address
+
+* Static Public IP address
+* You are charged if not used
+* Associated with a private IP address on the instance
