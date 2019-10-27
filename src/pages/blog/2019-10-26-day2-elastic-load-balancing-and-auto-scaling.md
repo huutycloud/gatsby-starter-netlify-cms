@@ -12,3 +12,9 @@ tags:
 ## What is Auto Scaling ?
 
 When instance meet a condition. Instance will automatically increase or decrease resource for responsible keep application working stable.
+
+## What is IAM Roles ?
+
+An IAM role is an IAM identity that you can create in your account that has specific permissions.
+
+![](/img/elb.png)
