@@ -9,4 +9,6 @@ tags:
   - aws
   - elb
 ---
-![](/img/chemex.jpg)
+## What is Auto Scaling ?
+
+When instance meet a condition. Instance will automatically increase or decrease resource for responsible keep application working stable.
