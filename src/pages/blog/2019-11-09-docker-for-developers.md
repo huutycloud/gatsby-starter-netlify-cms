@@ -38,6 +38,24 @@ Any container that runs is created from an image. An image describes everything 
 
 Images are stored in a registry.
 
-_**Reference:**_
+## Use Docker Images
+
+`docker run hello-world`
+
+**docker ps**: lists the containers that are still running. Add the -a switch in order to see containers that have stopped
+
+**docker logs**: retrieves the logs of a container, even when it has stopped
+
+**docker inspect**: gets detailed information about a running or stopped container
+
+**docker stop**: deletes a container that is still running
+
+**docker rm**: deletes a container
+
+**docker container prune -f**: This is the equivalent of running one docker rm command for each stopped container.
+
+**docker run -d -p 8085:80 nginx**: The -p switch takes two parameters; the incoming port you want to open on the host machine, and the port to which it should be mapped inside the container
+
+**_Reference:_**
 
 * https://www.edureka.co/blog/what-is-docker-container
