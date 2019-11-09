@@ -26,8 +26,18 @@ Containers solve this problem since each app will run inside its own container w
 
 Each container encapsulates its own dependencies. Which means you can migrate the PHP runtime from version 5.6 to 7.2 in a container without it affecting others. Any other container that would use, for instance, Node.JS would not interfere with any of the Wordpress containers.
 
+## Containers
 
+A container is what we eventually want to run and host in Docker. You can think of it as an isolated machine, or a virtual machine if you prefer.
 
-**_Reference:_**
+## Images
+
+Any container that runs is created from an image. An image describes everything that is needed to create a container; it is a template for containers. You may create as many containers as needed from a single image.
+
+## Registries
+
+Images are stored in a registry.
+
+_**Reference:**_
 
 * https://www.edureka.co/blog/what-is-docker-container
