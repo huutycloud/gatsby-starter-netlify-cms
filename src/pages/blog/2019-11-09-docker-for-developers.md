@@ -62,6 +62,16 @@ Images are stored in a registry.
 
 It will ensure that any data written to the /data/db directory inside the container is actually written to the /your/dir directory on the host system. This ensures that the data is not lost when the container is restarted.
 
-**_Reference:_**
+## Creating a Simple Image
+
+> The Dockerfile file can have any name. Naming it Dockerfile makes it easier for others to understand its purpose when they see that file in your project. It also means we don’t need to state the file name when using the docker build command.
+
+```
+FROM debian:8CMD ["echo", "Hello world"]
+```
+
+`docker build -t hello .`
+
+_**Reference:**_
 
 * https://www.edureka.co/blog/what-is-docker-container
