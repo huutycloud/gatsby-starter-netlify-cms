@@ -56,6 +56,12 @@ Images are stored in a registry.
 
 **docker run -d -p 8085:80 nginx**: The -p switch takes two parameters; the incoming port you want to open on the host machine, and the port to which it should be mapped inside the container
 
+## Using Volumes
+
+`docker run -v /your/dir:/data/db -d mongo`
+
+It will ensure that any data written to the /data/db directory inside the container is actually written to the /your/dir directory on the host system. This ensures that the data is not lost when the container is restarted.
+
 **_Reference:_**
 
 * https://www.edureka.co/blog/what-is-docker-container
