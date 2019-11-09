@@ -12,6 +12,8 @@ featuredimage: /img/kubernetes.png
 tags:
   - kubernetes
 ---
+
+
 ## What is Kubernetes?
 
 Kubernetes was first developed by a team at Google. It is based on their experience from running containers at scale for years. Later on, it was donated to Cloud Native Computing Foundation (CNCF). It is a true open source project with probably the highest velocity in history.
@@ -35,3 +37,17 @@ Kubernetes was first developed by a team at Google. It is based on their experie
 * We can use it to validate the health of our services.
 * It can load balance requests and monitor resources.
 * It provides service discovery and easy access to logs.
+
+## Understanding kubectl
+
+Kubernetes’ command-line tool, `kubectl`, is used to manage a cluster and applications running inside it. We’ll use `kubectl` a lot throughout the book, so we won’t go into details just yet. Instead, we’ll discuss its commands through examples that will follow shortly. For now, think of it as your interlocutor with a Kubernetes cluster.
+
+![](/img/kubectl.svg)
+
+Linux
+
+```
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
