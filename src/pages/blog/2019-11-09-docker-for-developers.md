@@ -20,9 +20,14 @@ Without containers, the dependencies and files are all placed together on a serv
 
 ![](/img/6418915167043584.svg)
 
-Containers solve this problem since each app will run inside its own container with its own dependencies.FROM debian:8
+Containers solve this problem since each app will run inside its own container with its own dependencies.
 
-CMD \["echo", "Hello world"] Your typical server would look like:
+```
+FROM debian:8
+CMD ["echo", "Hello world"]
+```
+
+Your typical server would look like:
 
 ![](/img/4552647455539200.svg)
 
@@ -75,6 +80,6 @@ CMD ["echo", "Hello world"]
 
 `docker build -t hello .`
 
-**_Reference:_**
+_**Reference:**_
 
 * https://www.edureka.co/blog/what-is-docker-container
