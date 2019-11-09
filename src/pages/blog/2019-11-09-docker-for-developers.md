@@ -20,7 +20,9 @@ Without containers, the dependencies and files are all placed together on a serv
 
 ![](/img/6418915167043584.svg)
 
-Containers solve this problem since each app will run inside its own container with its own dependencies. Your typical server would look like:
+Containers solve this problem since each app will run inside its own container with its own dependencies.FROM debian:8
+
+CMD \["echo", "Hello world"] Your typical server would look like:
 
 ![](/img/4552647455539200.svg)
 
@@ -67,11 +69,12 @@ It will ensure that any data written to the /data/db directory inside the contai
 > The Dockerfile file can have any name. Naming it Dockerfile makes it easier for others to understand its purpose when they see that file in your project. It also means we don’t need to state the file name when using the docker build command.
 
 ```
-FROM debian:8CMD ["echo", "Hello world"]
+FROM debian:8
+CMD ["echo", "Hello world"]
 ```
 
 `docker build -t hello .`
 
-_**Reference:**_
+**_Reference:_**
 
 * https://www.edureka.co/blog/what-is-docker-container
