@@ -51,3 +51,10 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
+
+## Understanding Minikube
+Linux
+Minikube supports several virtualization technologies. We’ll use VirtualBox throughout the book since it is the only virtualization supported in all operating systems. If you do not have it already, please head to the Download VirtualBox page and get the version that matches your OS.
+```
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```
