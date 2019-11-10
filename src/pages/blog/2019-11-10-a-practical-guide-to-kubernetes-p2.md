@@ -21,3 +21,7 @@ ClusterIP (the default type) exposes the port only inside the cluster. Such a po
 ## The Volumes
 
 > We can describe Volumes as a way to access a file system that might be running on the same host or somewhere else. No matter where that file system is, it is external to the containers that mount volumes. There can be many reasons why someone might mount a Volume, with state preservation being only one of them.
+
+## Creating A Production-Ready Kubernetes Cluster
+
+Creating a Kubernetes cluster is not trivial. We have to make many choices, and we can easily get lost in the myriad of options. The number of permutations is getting close to infinite and, yet, our clusters need to be configured consistently.
