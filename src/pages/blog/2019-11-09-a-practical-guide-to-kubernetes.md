@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: A Practical Guide to Kubernetes
+title: A Practical Guide to Kubernetes - P1
 date: 2019-11-09T14:43:02.465Z
 description: >-
   Kubernetes was first developed by a team at Google. It is based on their
