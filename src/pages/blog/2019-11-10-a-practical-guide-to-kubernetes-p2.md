@@ -10,4 +10,6 @@ featuredimage: /img/5275456112689152.svg
 tags:
   - kubernetes
 ---
-Kubernetes Services provide addresses through which associated Pods can be accessed.
+## ClusterIP
+
+ClusterIP (the default type) exposes the port only inside the cluster. Such a port would not be accessible from anywhere outside. ClusterIP is useful when we want to enable communication between Pods and still prevent any external access.
