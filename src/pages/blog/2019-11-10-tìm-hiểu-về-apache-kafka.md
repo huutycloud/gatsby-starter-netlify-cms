@@ -20,6 +20,8 @@ Zookeeper là một dịch vụ (một server) tập trung cho việc duy trì t
 * Lưu trữ Kafka cluster id
 * Store ACLs (Access Control Lists) nếu bảo mật được bật
 
-_**Reference:**_
+Một cụm Kafka thường có số lượng máy chủ là 1,3,5,7,9. Mình sẽ sử dụng 3 con server để đảm bảo tính sẵn sàng cao của Kafka Cluster.
+
+**_Reference:_**
 
 https://stackjava.com/apache-kafka/zookeeper-la-gi-tim-hieu-apache-zookeeper.html
