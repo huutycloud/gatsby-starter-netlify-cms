@@ -53,7 +53,38 @@ Bước 2: Khởi tạo Cluster bao gồm 1 Node duy nhất
 `gcloud container clusters create my-first-cluster --num-nodes 1`
 
 Nếu các bạn bị lỗi thì nhớ kích hoạt Kubernetes Engine API bằng cách vào đường link ở lỗi
-
 ![](/img/error-not-enable-api-k8s.jpg)
 
 ![](/img/error-not-enable-api-k8s-2.jpg)
+
+![](/img/validation-status.jpg)
+
+Bước 3: Tạo Pod bên trong Node
+
+`kubectl run wordpress --image=tutum/wordpress --port=8080`
+
+Verify trạng thái khởi tạo
+
+`kubectl get pods`
+
+```
+huutycloud@cloudshell:~ (phonic-formula-254913)$ kubectl get pods
+NAME                         READY   STATUS    RESTARTS   AGE
+wordpress-598994b56c-zwbt2   1/1     Running   0          68s
+```
+
+Bước 4: Expose đường dẫn ra bên ngoài
+
+`kubectl expose pod wordpress-598994b56c-zwbt2 --name=wordpress --type=LoadBalancer`
+
+Kết quả: 
+
+```
+service/wordpress exposed
+```
+
+`kubectl describe services wordpress`
+
+![](/img/annotation-2019-11-23-234800.jpg)
+
+Các bạn sử dụng địa chỉ LoadBalancer Ingress để xem trang của mình đã hoạt động hay chưa nhé.
