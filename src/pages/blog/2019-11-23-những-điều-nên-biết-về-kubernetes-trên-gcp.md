@@ -33,18 +33,27 @@ tags:
 
 Bước 1: Mở Cloud Shell
 
-![](/img/cloud-shell.jpg)
+Chạy lệnh sau để thiết lập vùng AZ mặc định
 
-Chạy lệnh sau để thiết lập AZ mặc định
-
-`gcloud config set compute/zone us-central1-a`
+`gcloud config set compute/zone us-central1-a`
 
 `gcloud config set compute/region us-central1`
 
-Kết quá: 
+Kết quả: 
+
 ```
 huutycloud@cloudshell:~ (phonic-formula-254913)$ gcloud config set compute/zone us-central1-a
 Updated property [compute/zone].
 huutycloud@cloudshell:~ (phonic-formula-254913)$ gcloud config set compute/region us-central1
 Updated property [compute/region].
 ```
+
+Bước 2: Khởi tạo Cluster bao gồm 1 Node duy nhất
+
+`gcloud container clusters create my-first-cluster --num-nodes 1`
+
+Nếu các bạn bị lỗi thì nhớ kích hoạt Kubernetes Engine API bằng cách vào đường link ở lỗi
+
+![](/img/error-not-enable-api-k8s.jpg)
+
+![](/img/error-not-enable-api-k8s-2.jpg)
