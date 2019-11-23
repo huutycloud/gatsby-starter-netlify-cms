@@ -12,12 +12,39 @@ tags:
 
 ## Container
 
-> A container image is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings. 
+> A container image is a lightweight, stand-alone,
+>  executable package of a piece of software that
+>  includes everything needed to run it: code,
+>  runtime, system tools, system libraries, settings. 
 
 ## Docker
 
-> Docker is a tool that can package an application and its dependencies in a virtual container that can run on any Linux server.
+> Docker is a tool that can package an
+>  application and its dependencies in a virtual
+>  container that can run on any Linux server.
 
 ## Kubernetes
 
-> Orchestration technology for containers - convert isolated containers running on different hardware into a cluster
+> Orchestration technology for containers -
+>  convert isolated containers running on
+>  different hardware into a cluster
+
+# Thử tạo một Cluster chứa Wordpress trên GCP
+
+Bước 1: Mở Cloud Shell
+
+![](/img/cloud-shell.jpg)
+
+Chạy lệnh sau để thiết lập AZ mặc định
+
+`gcloud config set compute/zone us-central1-a`
+
+`gcloud config set compute/region us-central1`
+
+Kết quá: 
+```
+huutycloud@cloudshell:~ (phonic-formula-254913)$ gcloud config set compute/zone us-central1-a
+Updated property [compute/zone].
+huutycloud@cloudshell:~ (phonic-formula-254913)$ gcloud config set compute/region us-central1
+Updated property [compute/region].
+```
