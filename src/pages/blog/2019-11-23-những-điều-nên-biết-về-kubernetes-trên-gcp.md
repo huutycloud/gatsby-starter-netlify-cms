@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Những điều nên biết về Kubernetes trên GCP
 date: 2019-11-23T12:55:48.721Z
-description: K8S
+description: Trong bài viết này mình sẽ hướng dẫn sử dụng K8S trên Google Cloud Platform
 featuredpost: true
 featuredimage: /img/kubernetes.png
 tags:
