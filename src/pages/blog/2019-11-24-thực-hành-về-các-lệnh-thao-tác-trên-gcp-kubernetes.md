@@ -32,3 +32,60 @@ Kết quả:
 root@first-deployment-774f957bb7-52b24:/# curl localhost
 Hello nginx!
 ```
+
+2. Lệnh kubectl create -f
+
+`kubectl get pods`
+
+`nano declarative-pod.yaml`
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: declarative-pod
+spec:
+  containers:
+  - name: memory-demo-ctr
+    image: nginx
+```
+
+`kubectl create -f declarative-pod.yaml`
+
+(copy the pod name from get pods)
+
+`kubectl exec -it memory-demo-ctr -- /bin/bash`
+
+`echo Hello nginx! We are so Declarative! > /usr/share/nginx/html/index.html`
+
+`apt-get update`
+
+`apt-get install curl`
+
+`curl localhost`
+
+Kết quả:
+
+```
+root@declarative-pod:/# curl localhost
+Hello nginx! We are so Declarative!
+```
+
+3. Lệnh kubectl apply -f
+
+`kubectl get pods`
+
+`kubectl describe po declarative-pod`
+
+`nano declarative-pod.yaml`
+
+`(change the image from nginx to busybox)`
+
+(save changes and exit)
+
+`kubectl apply -f declarative-pod.yaml`
+
+`kubectl get pods`
+
+`kubectl describe (updated pod)`
+``
