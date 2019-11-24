@@ -61,7 +61,7 @@ Nếu các bạn bị lỗi thì nhớ kích hoạt Kubernetes Engine API bằng
 
 Bước 3: Tạo Pod bên trong Node
 
-`kubectl run wordpress --image=tutum/wordpress --port=8080`
+`kubectl run wordpress --image=tutum/wordpress --port=80`
 
 Verify trạng thái khởi tạo
 
