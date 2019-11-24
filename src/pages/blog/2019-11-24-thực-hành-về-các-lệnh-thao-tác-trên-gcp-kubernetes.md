@@ -79,7 +79,7 @@ Hello nginx! We are so Declarative!
 
 `nano declarative-pod.yaml`
 
-`(change the image from nginx to busybox)`
+(change the image from nginx to busybox)
 
 (save changes and exit)
 
@@ -88,4 +88,3 @@ Hello nginx! We are so Declarative!
 `kubectl get pods`
 
 `kubectl describe (updated pod)`
-``
