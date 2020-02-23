@@ -22,3 +22,10 @@ Lợi ích của Microservices
 * Cho phép uodate chức năng mà không ảnh hưởng tới khả năng vận hành của toàn hệ thống
 * Giảm thiểu cơ hội mà bị hỏng một số thứ không liên quan tới hệ thống
 * Cho phép nhiều developer làm việc với hệ thống chung một thời điểm
+
+Những thứ mà Microservices có thể giải quyết nhằm gia tăng hiệu suất
+
+* Mọi thứ nên được chia tách ngoại trừ database
+* Microservices sẽ giải quyết quy trình phát triển yếu kém và quy trình deployment
+* Chỉ tập trung phát triển chức năng mà không cần trung gian giữa các team khác với nhau
+* Phá vỡ rào cản về công nghệ phía sau
